@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body,
+html {
+  font-family: "Vazir";
+  line-height: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  background-color: #333;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-link a {
+  color: #fff;
+  margin-left: 1rem;
+  padding: .75rem;
+}
+
+nav h3 {
+  color: orangered;
+}
+
+nav .logo {
+  padding: .75rem;
+}
+
+nav span {
+  color: #fff;
+}
+
+.nav-link a:hover {
+  background-color: orange;
+  color: #fff;
+  border-radius: 5px;
+
+}
+
+
+
+/* UTILITES */
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: orange;
+  padding: .5rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: orange;
+  background-color: #fff;
+}
+
+.m-1 {
+  margin: 1.25rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.p-1 {
+  padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1.25rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* HEADER */
+#showCase {
+  height: 100vh;
+  background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
+}
+
+.showCase-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* SECTION1 */
+#section1 {
+  padding: 2rem 1rem;
+}
+
+#section1 .items {
+  padding: 1rem;
+  display: flex;
+}
+
+#section1 .items .item {
+  flex: 1;
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+#section1 i {
+  padding: 1rem;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.container1 {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* SECTION2 */
+#section2 {
+  display: flex;
+  background-color: #333;
+
+}
+
+#section2 .container2 {
+  flex: 1;
+  padding: 2rem 1rem;
+  color: #f4f4f4;
+}
+
+#section2 .container2 ul {
+  padding: 1rem 0;
+}
+
+#section2 .img {
+  flex: 1;
+  background: #f4f4f4 url("../img/section2.jpg") no-repeat center center/cover;
+}
+
+#section2 .container2 ul li {
+  list-style: none;
+  border-bottom: #444 1px dotted;
+  padding-bottom: .75rem;
+}
+
+/* SECTION3 */
+#section3 {
+  padding: 2rem 8rem;
+  background-color: rgb(249, 250, 248);
+}
+
+#section3 .items {
+  display: flex;
+  justify-content: space-around;
+}
+
+#section3 .items div {
+  flex: 1;
+ 
+}
+
+#section3 .items div img {
+  width: 50%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* SECTION4 */
+#section4 {
+
+  display: flex;
+  justify-content: center;
+}
+.contact-form{
+  flex-basis: 400px;
+  text-align: right;
+}
+.form-group label{
+  display: block;
+}
+.form-group input,
+.form-group textarea{
+  width: 100%;
+  padding: .5rem;
+}
+
+footer{
+  color: #fff;
+  background-color: #333;
+}
+footer .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+footer .container .socials{
+  display: flex;
+  align-items: center;
+}
+footer .container .socials i{
+ margin-left: .5rem;
+}
+
+
+@media screen and (max-width: 500px){
+  nav{
+    flex-direction: column-reverse;
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 768px){
+#section1 .items{
+  display: block;
+}
+#section1 .item {
+  padding: 1rem;
+  display: flex;
+  
+}
+#section1 .item div{
+  text-align: right;
+}
+
+#section1 .item i{
+  align-self: center;
+}
+#section3 h2{
+  white-space: nowrap;
+}
+#section3 .items {
+flex-direction: column;
+}
+#section3 .items .item{
+  padding: 1.25rem 0;
+}
+#section3 .items div:last-child{
+  display: none;
+}
+#section2 {
+  flex-direction: column;
+}
+#section2 .img{
+  flex-basis:350px;
+}
+}
+@media screen and (min-width: 1100px){
+  #section1 .item{
+    display: flex;
+  } 
+  #section1 .item i{
+    align-self: center;
+  }
+  #section1 .item h4{
+    text-align: right;
+  }
+}
