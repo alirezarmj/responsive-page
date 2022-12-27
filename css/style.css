@@ -11,8 +11,6 @@
 }
 
 
-
-
 /* Reset */
 * {
   margin: 0;
@@ -72,8 +70,6 @@ nav span {
   border-radius: 5px;
 
 }
-
-
 
 /* UTILITES */
 .btn {
@@ -268,6 +264,9 @@ footer .container .socials i{
     height: 8rem;
   }
 }
+
+
+
 @media screen and (max-width: 768px){
 #section1 .items{
   display: block;
@@ -303,6 +302,9 @@ flex-direction: column;
   flex-basis:350px;
 }
 }
+
+
+
 @media screen and (min-width: 1100px){
   #section1 .item{
     display: flex;
